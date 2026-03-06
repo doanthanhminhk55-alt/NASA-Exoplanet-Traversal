@@ -108,11 +108,16 @@ Visualization is implemented using **Matplotlib**.
 The project follows a **clean modular structure** separating backend
 data logic and frontend UI.
 
-NASA-Exoplanet-Traversal │ ├── backend │ ├── loader.py \# Loads and
-preprocesses CSV data │ └── search.py \# Implements search and filtering
-logic │ ├── frontend │ └── app.py \# Streamlit UI application │ ├── data
-│ └── exoplanets.csv \# NASA dataset │ ├── requirements.txt └──
-README.md
+NASA-Exoplanet-Traversal 
+│ ├── backend 
+│ ├── loader.py # Loads andpreprocesses CSV data 
+│ └── search.py # Implements search and filtering logic 
+│ ├── frontend 
+│ └── app.py # Streamlit UI application 
+│ ├── data
+│ └── exoplanets.csv \# NASA dataset 
+│ ├── requirements.txt 
+  └──README.md
 
 ------------------------------------------------------------------------
 
@@ -133,8 +138,8 @@ operations.
 
 Example:
 
-results = df\[ (df\["disc_year"\] == year) & (df\["disc_facility"\] ==
-facility)\]
+results = df[ (df["disc_year"] == year) & (df["disc_facility"] ==
+facility)]
 
 This approach ensures **fast query performance**.
 
